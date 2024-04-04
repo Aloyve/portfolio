@@ -1,0 +1,13 @@
+<body>
+    <meta charset="UTF-8">
+    <script>
+        let linguagem = prompt("Qual a linguagem de programação que você mais gosta? Escolha uma dentre essas Java, Javascript,C++,Python")
+        const linguagensPermitidas = ["Java", "Javascript","C++","Python"]
+        console.log("teste cheguei aqui")
+        while(!linguagensPermitidas.includes(linguagem)) {
+            alert("linguagem nao permitida, por favor escolha uma linguagem válida")
+            linguagem = prompt("Qual a linguagem de programação que você mais gosta? Escolha uma dentre essas Java, Javascript,C++,Python")
+        }
+        alert(`Sua linguagem preferida é ${linguagem}`);
+    </script>
+</body>
